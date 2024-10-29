@@ -57,13 +57,6 @@ module "blog_alb" {
     }
   }
 
-  http_tcp_listeners = [
-    {
-      port               = 80
-      protocol           = "HTTP"
-      target_group_index = 0
-    }
-  ]
 
   tags = {
     Environment = "dev"
