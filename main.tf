@@ -8,7 +8,7 @@ data "aws_ami" "app_ami" {
 
   filter {
     name   = "virtualization-type"
-    values = [var.ami_filter.owner]
+    values = ["hvm"]
   }
 
   owners = [var.ami_filter.owner] 
